@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_firm"
+            android:layout_marginStart="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/text_image_firm"
+            app:srcCompat="@drawable/factory" />
+
+        <TextView
+            android:id="@+id/intro_1"
+            style="@style/textBoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/bedrijf" />
+
+        <EditText
+            android:id="@+id/input_firm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/Naam_bedrijf"
+            android:inputType="textLongMessage|textWebEditText|textPersonName|textCapSentences|textCapWords|textCapCharacters"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/image_measure"
+            android:layout_marginStart="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/text_image_measure"
+            app:srcCompat="@drawable/sampling" />
+
+        <TextView
+            android:id="@+id/intro_2"
+            style="@style/textBoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/Doel"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/input_number_measure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="@string/Hoeveel_metingen"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text_fout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/start_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/start"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:theme="@style/Button.Orange"/>
+
+        <ImageButton
+            android:id="@+id/cheatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            app:srcCompat="@android:drawable/ic_lock_lock" />
+
+    </LinearLayout>
+</layout>
+
+

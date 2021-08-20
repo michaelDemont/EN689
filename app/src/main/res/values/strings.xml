@@ -1,0 +1,61 @@
+<resources>
+
+  <!--text StartFragment -->
+    <string name="app_name">EN689</string>
+    <string name="text_image_firm">icon company</string>
+    <string name="bedrijf">Enter the name of the company:</string>
+    <string name="Naam_bedrijf">What is its name?</string>
+    <string name="text_image_measure">icon measurements</string>
+    <string name="Doel">Enter the number of measurements from the same exposure group (SEG) on which you want to perform a statistical analysis:</string>
+    <string name="Hoeveel_metingen"># measurements</string>
+    <string name="start">START</string>
+    <string name="nameMissing">Enter the name of the company please!\n</string>
+    <string name="numberMissing">Enter the number of measurements please!</string>
+    <string name="numberNotEnough">At least 3 measurements are needed!</string>
+
+  <!--text AboutFragment -->
+    <string name="Creator">This app was developed by: \nMICHAËL DEMONT !</string>
+    <string name="aboutText">
+        He does a good job, is a real expert but sometimes remains too much within that role.
+        He meets the required deadlines, is correct, conscientious and deliberates alternatives to come to well-considered conclusions.
+        \n\nHowever he has a introverted attitude that can pose a problem for the team dynamics.
+        Furthermore, his communication is frequently rather unconventional. He is very focused on his own work and responsibilities and much less
+        on contact or discussion with others.
+        He is always available but does not take the initiative.</string>
+
+    <!--text PassFragment -->
+    <string name="riddle">Complete the serie</string>
+    <string name="passAnnul">Cancel</string>
+
+    <!--text InputFragment -->
+    <string name="input_text1">Enter the value of the first measurement:</string>
+    <string name="input_hint1">1st value</string>
+    <string name="input_globalText1">Enter the value of the\t</string>
+    <string name="input_globalText2">th measurement:</string>
+    <string name="input_globalText3">nd measurement:</string>
+    <string name="input_globalText4">rd measurement:</string>
+    <string name="input_globalHint">th value</string>
+    <string name="input_globalHint3">nd value</string>
+    <string name="input_globalHint4">rd value</string>
+
+    <!--  text GrenswaardeFragment -->
+    <string name="grens_text">Enter the value of the occupational exposure limit (OEL):</string>
+    <string name="grens_hint">value OEL</string>
+
+    <!--  text SelectionFragment -->
+    <string name="selec_kies">Pick your choice:</string>
+    <string name="selec_o1">Lognormal distribution</string>
+    <string name="selec_o2">Normal distribution</string>
+    <string name="selec_button">Confirm</string>
+
+    <!--  text EindFragmenten -->
+    <string name="compl_text">COMPLIANCE!</string>
+    <string name="non_compl_text">NON-COMPLIANCE!</string>
+    <string name="doubt_text">ADDITIONAL MEASUREMENTS REQUIRED !</string>
+
+  <!--  text (Log)NormalFragmenten -->
+     <string name="XAxis">Ln concentrations</string>
+      <string name="YAxis">Z-score</string>
+      <string name="XAxis_norm">Concentrations</string>
+
+</resources>

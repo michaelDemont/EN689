@@ -1,0 +1,61 @@
+<resources>
+
+  <!--text StartFragment -->
+    <string name="app_name">EN689</string>
+    <string name="text_image_firm">icoon bedrijf</string>
+    <string name="bedrijf">Geef de naam van het bedrijf:</string>
+    <string name="Naam_bedrijf">Hoe noemt het bedrijf?</string>
+    <string name="text_image_measure">icoon metingen</string>
+    <string name="Doel">Kies het aantal metingen van eenzelfde blootstellingsgroep (SEG) waarop je een statistische analyse wil uitvoeren:</string>
+    <string name="Hoeveel_metingen"># metingen</string>
+    <string name="start">START</string>
+    <string name="nameMissing">Vul de naam van het bedrijf in aub!\n</string>
+    <string name="numberMissing">Vul het aantal metingen in aub!</string>
+    <string name="numberNotEnough">Het aantal metingen moet minstens 3 bedragen!</string>
+
+  <!--text AboutFragment -->
+    <string name="Creator">Deze app is ontwikkeld door: \nMICHAËL DEMONT !</string>
+    <string name="aboutText">
+        Hij levert inhoudelijk goed werk, is een echte expert maar blijft soms te veel binnen die rol.
+        Hij respecteert de voorziene termijnen, is correct, consciëntieus en weegt alternatieven af om tot doordachte conclusies te komen.
+        \n\nHij heeft echter een eerder gesloten houding die een probleem kan vormen voor het functioneren binnen het team.
+        Zijn communicatie laat bovendien geregeld te wensen over.
+        Hij is heel gericht op zijn eigen werk en verantwoordelijkheden en veel minder op contact of overleg met anderen.
+        Hij blijft steeds beschikbaar, maar neemt zelf geen initiatief.</string>
+
+    <!--text PassFragment -->
+    <string name="riddle">Vul de reeks aan</string>
+    <string name="passAnnul">Annuleren</string>
+
+    <!--text InputFragment -->
+    <string name="input_text1">Geef de waarde van de eerste meting in:</string>
+    <string name="input_hint1">1ste waarde meting</string>
+    <string name="input_globalText1">Geef de waarde van de\t</string>
+    <string name="input_globalText2">de meting in:</string>
+    <string name="input_globalText3">de meting in:</string>
+    <string name="input_globalText4">de meting in:</string>
+    <string name="input_globalHint">de waarde meting</string>
+    <string name="input_globalHint3">de waarde meting</string>
+    <string name="input_globalHint4">de waarde meting</string>
+
+    <!--  text GrenswaardeFragment -->
+    <string name="grens_text">Geef de waarde van de grenswaarde in:</string>
+    <string name="grens_hint">waarde grenswaarde</string>
+
+    <!--  text SelectionFragment -->
+    <string name="selec_kies">Kies:</string>
+    <string name="selec_o1">Lognormale verdeling</string>
+    <string name="selec_o2">Normale verdeling</string>
+    <string name="selec_button">Bevestigen</string>
+
+  <!--  text EindFragmenten -->
+    <string name="compl_text">CONFORM!</string>
+    <string name="non_compl_text">NIET CONFORM!</string>
+    <string name="doubt_text">BIJKOMENDE METINGEN NODIG !</string>
+
+  <!--  text LogNormalFragmenten -->
+    <string name="XAxis">Ln concentraties</string>
+    <string name="YAxis">Z-score</string>
+    <string name="XAxis_norm">Concentraties</string>
+
+</resources>

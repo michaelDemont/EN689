@@ -1,0 +1,62 @@
+<resources>
+
+  <!--text StartFragment -->
+    <string name="app_name">EN689</string>
+    <string name="text_image_firm">icône entreprise</string>
+    <string name="bedrijf">Introduisez le nom de l\'entreprise:</string>
+    <string name="Naam_bedrijf">C\'est quoi son nom?</string>
+    <string name="text_image_measure">icône mesures</string>
+    <string name="Doel"> Introduisez le nombre de mesures du même groupe d\'exposition (SEG) sur lequel vous souhaitez effectuer une analyse statistique:</string>
+    <string name="Hoeveel_metingen"># mesures</string>
+    <string name="start">START</string>
+    <string name="nameMissing">Introduisez le nom de l\'entreprise svp!\n</string>
+    <string name="numberMissing">Introduisez le nombre de mesures svp!</string>
+    <string name="numberNotEnough">Il faut au moins 3 mesures!</string>
+
+  <!--text AboutFragment -->
+  <string name="Creator">Cette application a été développée par: \nMICHAËL DEMONT !</string>
+  <string name="aboutText">
+        Il fait du bon travail, est un vrai expert mais reste parfois trop dans ce rôle.
+        Il respecte les délais prévus, est correct, consciencieux et évalue les alternatives afin de prendre des conclusions mûrement réfléchies.
+        \n\nCependant il a une attitude plutôt fermée qui peut pose un problème pour le fonctionnement au sein de l\'équipe.
+        En plus, sa communication n\'est souvent pas conforme aux conventions.
+        Il est fortement ciblé sur son propre travail et ses responsabilités et beaucoup moins sur contact ou discussion avec les autres.
+        Il reste toujours disponible, mais ne prend pas d\'initiative lui-même.</string>
+
+
+  <!--text PassFragment -->
+  <string name="riddle">Complétez la série</string>
+  <string name="passAnnul">Annuler</string>
+
+    <!--text InputFragment -->
+    <string name="input_text1">Introduisez le résultat de la première mesure:</string>
+    <string name="input_hint1">1ier résultat</string>
+    <string name="input_globalText1">Introduisez le résultat de la\t</string>
+    <string name="input_globalText2">ième mesure:</string>
+    <string name="input_globalText3">ième mesure:</string>
+    <string name="input_globalText4">ième mesure:</string>
+    <string name="input_globalHint">ième résultat</string>
+    <string name="input_globalHint3">ième résultat</string>
+    <string name="input_globalHint4">ième résultat</string>
+
+    <!--  text GrenswaardeFragment -->
+    <string name="grens_text">"Introduisez la valeur limite d\'exposition (VLE):"</string>
+    <string name="grens_hint">valeur VLE</string>
+
+    <!--  text SelectionFragment -->
+    <string name="selec_kies">Faites votre choix:</string>
+    <string name="selec_o1">Loi Log-normale</string>
+    <string name="selec_o2">Loi Normale</string>
+    <string name="selec_button">Confirmer</string>
+
+  <!--  text EindFragmenten -->
+    <string name="compl_text">CONFORME!</string>
+    <string name="non_compl_text">PAS CONFORME!</string>
+    <string name="doubt_text">MESURES SUPPLEMENTAIRES NECESSAIRES!</string>
+
+  <!--  text LogNormalFragmenten -->
+    <string name="XAxis">Ln concentrations</string>
+    <string name="YAxis">Z-score</string>
+    <string name="XAxis_norm">Concentrations</string>
+
+</resources>

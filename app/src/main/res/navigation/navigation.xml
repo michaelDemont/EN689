@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.demont.michael.en689.StartFragment"
+        android:label="StartFragment" >
+        <action
+            android:id="@+id/action_startFragment_to_inputFragment"
+            app:destination="@id/inputFragment"
+            app:enterAnim="@anim/slide_in_left" />
+        <action
+            android:id="@+id/action_startFragment_to_passFragment"
+            app:destination="@id/passFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="com.demont.michael.en689.InputFragment"
+        android:label="InputFragment" >
+        <action
+            android:id="@+id/action_inputFragment_to_grenswaardeFragment"
+            app:destination="@id/grenswaardeFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:popUpTo="@id/inputFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="loopNum"
+            app:argType="integer" />
+        <argument
+            android:name="cheater"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/grenswaardeFragment"
+        android:name="com.demont.michael.en689.GrenswaardeFragment"
+        android:label="GrenswaardeFragment" >
+        <action
+            android:id="@+id/action_grenswaardeFragment_to_logNormGraphFragment"
+            app:destination="@id/logNormGraphFragment"
+            app:popUpTo="@id/grenswaardeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_grenswaardeFragment_to_nonComplianceFragment"
+            app:destination="@id/nonComplianceFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popUpTo="@id/inputFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_grenswaardeFragment_to_doubtFragment"
+            app:destination="@id/doubtFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popUpTo="@id/inputFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_grenswaardeFragment_to_complianceFragment"
+            app:destination="@id/complianceFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popUpTo="@id/inputFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/logNormGraphFragment"
+        android:name="com.demont.michael.en689.LogNormGraphFragment"
+        android:label="LogNormGraphFragment" >
+        <action
+            android:id="@+id/action_logNormGraphFragment_to_normGraphFragment"
+            app:destination="@id/normGraphFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/normGraphFragment"
+        android:name="com.demont.michael.en689.NormGraphFragment"
+        android:label="NormGraphFragment" >
+        <action
+            android:id="@+id/action_normGraphFragment_to_selectionFragment"
+            app:destination="@id/selectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectionFragment"
+        android:name="com.demont.michael.en689.SelectionFragment"
+        android:label="fragment_selection"
+        tools:layout="@layout/fragment_selection" >
+        <action
+            android:id="@+id/action_selectionFragment_to_complianceFragment"
+            app:destination="@id/complianceFragment"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_selectionFragment_to_nonComplianceFragment"
+            app:destination="@id/nonComplianceFragment"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/complianceFragment"
+        android:name="com.demont.michael.en689.ComplianceFragment"
+        android:label="fragment_compliance"
+        tools:layout="@layout/fragment_compliance" >
+        <argument
+            android:name="gemid"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="stdv"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="UR"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="UT"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="radioB"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/nonComplianceFragment"
+        android:name="com.demont.michael.en689.NonComplianceFragment"
+        android:label="fragment_non_compliance"
+        tools:layout="@layout/fragment_non_compliance" >
+        <argument
+            android:name="gemid"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="stdv"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="UR"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="UT"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="radioB"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/doubtFragment"
+        android:name="com.demont.michael.en689.DoubtFragment"
+        android:label="fragment_doubt"
+        tools:layout="@layout/fragment_doubt" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.demont.michael.en689.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/passFragment"
+        android:name="com.demont.michael.en689.PassFragment"
+        android:label="fragment_pass"
+        tools:layout="@layout/fragment_pass" >
+        <action
+            android:id="@+id/action_passFragment_to_inputFragment"
+            app:destination="@id/inputFragment" />
+    </fragment>
+</navigation>

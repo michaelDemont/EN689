@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NormGraphFragment">
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:title="Normal distribution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/normButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/roboto"
+        android:text="Next"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/textN99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/graph"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="99%"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <TextView
+        android:id="@+id/textN98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/graph"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="98%" />
+
+    <TextView
+        android:id="@+id/textN95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/graph"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="83dp"
+        android:text="95%" />
+
+    <TextView
+        android:id="@+id/textN90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/graph"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="110dp"
+        android:text="90%" />
+
+    <TextView
+        android:id="@+id/textN84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/graph"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="133dp"
+        android:text="84%" />
+
+    <TextView
+        android:id="@+id/textN75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/graph"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="157dp"
+        android:text="75%" />
+
+    <TextView
+        android:id="@+id/textN50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/graph"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="210dp"
+        android:text="50%" />
+
+    <TextView
+        android:id="@+id/textN25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/graph"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="260dp"
+        android:text="25%" />
+
+    <TextView
+        android:id="@+id/textN16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/graph"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="287dp"
+        android:text="16%" />
+
+    <TextView
+        android:id="@+id/textN10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/graph"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="307dp"
+        android:text="10%" />
+
+    <TextView
+        android:id="@+id/textN5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/graph"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="335dp"
+        android:text="5%" />
+
+    <TextView
+        android:id="@+id/textNN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/graph"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="367dp"
+        android:text="2%" />
+
+    <TextView
+        android:id="@+id/textN1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/graph"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="390dp"
+        android:text="1%" />
+
+</RelativeLayout>
+</layout>
