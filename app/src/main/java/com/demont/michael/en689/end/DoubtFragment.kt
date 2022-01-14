@@ -1,10 +1,11 @@
-package com.demont.michael.en689
+package com.demont.michael.en689.end
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.demont.michael.en689.R
 
 class DoubtFragment : Fragment() {
 

@@ -6,19 +6,18 @@
     app:startDestination="@id/startFragment">
     <fragment
         android:id="@+id/startFragment"
-        android:name="com.demont.michael.en689.StartFragment"
+        android:name="com.demont.michael.en689.start.StartFragment"
         android:label="StartFragment" >
-        <action
-            android:id="@+id/action_startFragment_to_inputFragment"
-            app:destination="@id/inputFragment"
-            app:enterAnim="@anim/slide_in_left" />
         <action
             android:id="@+id/action_startFragment_to_passFragment"
             app:destination="@id/passFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_chemFragment"
+            app:destination="@id/chemFragment" />
     </fragment>
     <fragment
         android:id="@+id/inputFragment"
-        android:name="com.demont.michael.en689.InputFragment"
+        android:name="com.demont.michael.en689.input.InputFragment"
         android:label="InputFragment" >
         <action
             android:id="@+id/action_inputFragment_to_grenswaardeFragment"
@@ -27,15 +26,22 @@
             app:popUpTo="@id/inputFragment"
             app:popUpToInclusive="true" />
         <argument
-            android:name="loopNum"
+            android:name="aantalM"
             app:argType="integer" />
         <argument
-            android:name="cheater"
-            app:argType="boolean" />
+            android:name="firma"
+            app:argType="string" />
+        <argument
+            android:name="func"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="elem"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/grenswaardeFragment"
-        android:name="com.demont.michael.en689.GrenswaardeFragment"
+        android:name="com.demont.michael.en689.grenswaarde.GrenswaardeFragment"
         android:label="GrenswaardeFragment" >
         <action
             android:id="@+id/action_grenswaardeFragment_to_logNormGraphFragment"
@@ -60,26 +66,78 @@
             app:enterAnim="@anim/fade_in"
             app:popUpTo="@id/inputFragment"
             app:popUpToInclusive="true" />
+        <argument
+            android:name="aantalM"
+            app:argType="integer"
+           />
+        <argument
+            android:name="results"
+            app:argType="float[]" />
+        <argument
+            android:name="firma"
+            app:argType="string" />
+        <argument
+            android:name="func"
+            app:argType="string" />
+        <argument
+            android:name="elem"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/logNormGraphFragment"
-        android:name="com.demont.michael.en689.LogNormGraphFragment"
+        android:name="com.demont.michael.en689.lognNormGraph.LogNormGraphFragment"
         android:label="LogNormGraphFragment" >
         <action
             android:id="@+id/action_logNormGraphFragment_to_normGraphFragment"
             app:destination="@id/normGraphFragment" />
+        <argument
+            android:name="aantalM"
+            app:argType="integer" />
+        <argument
+            android:name="results"
+            app:argType="float[]" />
+        <argument
+            android:name="gw"
+            app:argType="float" />
+        <argument
+            android:name="firma"
+            app:argType="string" />
+        <argument
+            android:name="func"
+            app:argType="string" />
+        <argument
+            android:name="elem"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/normGraphFragment"
-        android:name="com.demont.michael.en689.NormGraphFragment"
+        android:name="com.demont.michael.en689.normGraph.NormGraphFragment"
         android:label="NormGraphFragment" >
         <action
             android:id="@+id/action_normGraphFragment_to_selectionFragment"
             app:destination="@id/selectionFragment" />
+        <argument
+            android:name="aantalM"
+            app:argType="integer" />
+        <argument
+            android:name="results"
+            app:argType="float[]" />
+        <argument
+            android:name="gw"
+            app:argType="float" />
+        <argument
+            android:name="firma"
+            app:argType="string" />
+        <argument
+            android:name="func"
+            app:argType="string" />
+        <argument
+            android:name="elem"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/selectionFragment"
-        android:name="com.demont.michael.en689.SelectionFragment"
+        android:name="com.demont.michael.en689.selection.SelectionFragment"
         android:label="fragment_selection"
         tools:layout="@layout/fragment_selection" >
         <action
@@ -90,10 +148,28 @@
             android:id="@+id/action_selectionFragment_to_nonComplianceFragment"
             app:destination="@id/nonComplianceFragment"
             app:enterAnim="@anim/fade_in" />
+        <argument
+            android:name="aantalM"
+            app:argType="integer" />
+        <argument
+            android:name="results"
+            app:argType="float[]" />
+        <argument
+            android:name="gw"
+            app:argType="float" />
+        <argument
+            android:name="firma"
+            app:argType="string" />
+        <argument
+            android:name="func"
+            app:argType="string" />
+        <argument
+            android:name="elem"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/complianceFragment"
-        android:name="com.demont.michael.en689.ComplianceFragment"
+        android:name="com.demont.michael.en689.end.ComplianceFragment"
         android:label="fragment_compliance"
         tools:layout="@layout/fragment_compliance" >
         <argument
@@ -118,7 +194,7 @@
     </fragment>
     <fragment
         android:id="@+id/nonComplianceFragment"
-        android:name="com.demont.michael.en689.NonComplianceFragment"
+        android:name="com.demont.michael.en689.end.NonComplianceFragment"
         android:label="fragment_non_compliance"
         tools:layout="@layout/fragment_non_compliance" >
         <argument
@@ -143,7 +219,7 @@
     </fragment>
     <fragment
         android:id="@+id/doubtFragment"
-        android:name="com.demont.michael.en689.DoubtFragment"
+        android:name="com.demont.michael.en689.end.DoubtFragment"
         android:label="fragment_doubt"
         tools:layout="@layout/fragment_doubt" />
     <fragment
@@ -153,11 +229,25 @@
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/passFragment"
-        android:name="com.demont.michael.en689.PassFragment"
+        android:name="com.demont.michael.en689.pass.PassFragment"
         android:label="fragment_pass"
-        tools:layout="@layout/fragment_pass" >
+        tools:layout="@layout/fragment_pass" />
+    <fragment
+        android:id="@+id/chemFragment"
+        android:name="com.demont.michael.en689.ChemFragment"
+        android:label="ChemFragment" >
         <action
-            android:id="@+id/action_passFragment_to_inputFragment"
+            android:id="@+id/action_chemFragment_to_inputFragment"
             app:destination="@id/inputFragment" />
+        <argument
+            android:name="firma"
+            app:argType="string" />
+        <argument
+            android:name="aantalM"
+            app:argType="integer" />
+        <argument
+            android:name="func"
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
 </navigation>

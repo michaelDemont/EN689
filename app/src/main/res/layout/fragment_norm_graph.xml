@@ -6,7 +6,7 @@ xmlns:tools="http://schemas.android.com/tools">
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NormGraphFragment">
+    tools:context=".normGraph.NormGraphFragment">
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graph"

@@ -6,8 +6,11 @@
     <string name="bedrijf">Enter the name of the company:</string>
     <string name="Naam_bedrijf">What is its name?</string>
     <string name="text_image_measure">icon measurements</string>
+    <string name="text_image_worker">icon worker</string>
     <string name="Doel">Enter the number of measurements from the same exposure group (SEG) on which you want to perform a statistical analysis:</string>
     <string name="Hoeveel_metingen"># measurements</string>
+    <string name="Function">What is the workplace or function of the workers?</string>
+    <string name="WelkeWerkpost">Workplace / Function ?</string>
     <string name="start">START</string>
     <string name="nameMissing">Enter the name of the company please!\n</string>
     <string name="numberMissing">Enter the number of measurements please!</string>
@@ -27,6 +30,17 @@
     <string name="riddle">Complete the serie</string>
     <string name="passAnnul">Cancel</string>
 
+    <!--text ChemFragment -->
+    <string name="chemical_agent">Which chemical agent was sampled ?</string>
+    <string-array name="CH">
+      <item> Inhalable dust</item>
+      <item> Metals</item>
+      <item> Quartz</item>
+      <item> Respirable dust</item>
+      <item> Volatile Organic Compounds</item>
+      <item> Welding fumes</item>
+    </string-array>
+
     <!--text InputFragment -->
     <string name="input_text1">Enter the value of the first measurement:</string>
     <string name="input_hint1">1st value</string>
@@ -35,8 +49,8 @@
     <string name="input_globalText3">nd measurement:</string>
     <string name="input_globalText4">rd measurement:</string>
     <string name="input_globalHint">th value</string>
-    <string name="input_globalHint3">nd value</string>
-    <string name="input_globalHint4">rd value</string>
+    <string name="input_globalHint3">2nd value</string>
+    <string name="input_globalHint4">3rd value</string>
 
     <!--  text GrenswaardeFragment -->
     <string name="grens_text">Enter the value of the occupational exposure limit (OEL):</string>
@@ -57,5 +71,6 @@
      <string name="XAxis">Ln concentrations</string>
       <string name="YAxis">Z-score</string>
       <string name="XAxis_norm">Concentrations</string>
+
 
 </resources>

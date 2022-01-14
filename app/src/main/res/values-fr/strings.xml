@@ -6,8 +6,11 @@
     <string name="bedrijf">Introduisez le nom de l\'entreprise:</string>
     <string name="Naam_bedrijf">C\'est quoi son nom?</string>
     <string name="text_image_measure">icône mesures</string>
+    <string name="text_image_worker">icône employé</string>
     <string name="Doel"> Introduisez le nombre de mesures du même groupe d\'exposition (SEG) sur lequel vous souhaitez effectuer une analyse statistique:</string>
     <string name="Hoeveel_metingen"># mesures</string>
+    <string name="Function">Quel est le poste de travail ou la fonctions des employés?</string>
+    <string name="WelkeWerkpost">Poste de travail / Fonction ?</string>
     <string name="start">START</string>
     <string name="nameMissing">Introduisez le nom de l\'entreprise svp!\n</string>
     <string name="numberMissing">Introduisez le nombre de mesures svp!</string>
@@ -28,6 +31,18 @@
   <string name="riddle">Complétez la série</string>
   <string name="passAnnul">Annuler</string>
 
+  <!--text ChemFragment -->
+  <string name="chemical_agent">Quel agent chimique a été échantillonné ?</string>
+  <string-array name="CH">
+    <item> Composants Organiques Volatiles</item>
+    <item> Fumée de soudage</item>
+    <item> Métaux</item>
+    <item> Poussière inhalable</item>
+    <item> Poussière respirable</item>
+    <item> Quartz</item>
+    <item> Metalen</item>
+  </string-array>
+
     <!--text InputFragment -->
     <string name="input_text1">Introduisez le résultat de la première mesure:</string>
     <string name="input_hint1">1ier résultat</string>
@@ -36,8 +51,8 @@
     <string name="input_globalText3">ième mesure:</string>
     <string name="input_globalText4">ième mesure:</string>
     <string name="input_globalHint">ième résultat</string>
-    <string name="input_globalHint3">ième résultat</string>
-    <string name="input_globalHint4">ième résultat</string>
+    <string name="input_globalHint3">2ième résultat</string>
+    <string name="input_globalHint4">3ième résultat</string>
 
     <!--  text GrenswaardeFragment -->
     <string name="grens_text">"Introduisez la valeur limite d\'exposition (VLE):"</string>

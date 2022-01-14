@@ -6,8 +6,11 @@
     <string name="bedrijf">Geef de naam van het bedrijf:</string>
     <string name="Naam_bedrijf">Hoe noemt het bedrijf?</string>
     <string name="text_image_measure">icoon metingen</string>
+    <string name="text_image_worker">icoon werknemer</string>
     <string name="Doel">Kies het aantal metingen van eenzelfde blootstellingsgroep (SEG) waarop je een statistische analyse wil uitvoeren:</string>
     <string name="Hoeveel_metingen"># metingen</string>
+    <string name="Function">Wat is de werkpost of functie van de werknemers?</string>
+    <string name="WelkeWerkpost">Werkpost / Functie ?</string>
     <string name="start">START</string>
     <string name="nameMissing">Vul de naam van het bedrijf in aub!\n</string>
     <string name="numberMissing">Vul het aantal metingen in aub!</string>
@@ -27,6 +30,17 @@
     <string name="riddle">Vul de reeks aan</string>
     <string name="passAnnul">Annuleren</string>
 
+    <!--text ChemFragment -->
+    <string name="chemical_agent">Welk chemisch agens werd er bemonsterd ?</string>
+    <string-array name="CH">
+      <item> Inadembaar stof</item>
+      <item> Inhaleerbaar stof</item>
+      <item> Kwarts</item>
+      <item> Lasrook</item>
+      <item> Metalen</item>
+      <item> Vluchtige Organische Componenten</item>
+    </string-array>
+
     <!--text InputFragment -->
     <string name="input_text1">Geef de waarde van de eerste meting in:</string>
     <string name="input_hint1">1ste waarde meting</string>
@@ -35,8 +49,8 @@
     <string name="input_globalText3">de meting in:</string>
     <string name="input_globalText4">de meting in:</string>
     <string name="input_globalHint">de waarde meting</string>
-    <string name="input_globalHint3">de waarde meting</string>
-    <string name="input_globalHint4">de waarde meting</string>
+    <string name="input_globalHint3">2de waarde meting</string>
+    <string name="input_globalHint4">3de waarde meting</string>
 
     <!--  text GrenswaardeFragment -->
     <string name="grens_text">Geef de waarde van de grenswaarde in:</string>
